@@ -7,6 +7,7 @@ A Claude Code plugin containing an [Agent Skill](https://code.claude.com/docs/en
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://code.claude.com/docs/en/plugins)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-green)](https://code.claude.com/docs/en/skills)
+[![Cursor Rules](https://img.shields.io/badge/Cursor-Rules-purple)](https://docs.cursor.com/context/rules-for-ai)
 
 ## Star History
 
@@ -90,6 +91,17 @@ git clone https://github.com/OthmanAdi/planning-with-files.git
 cp -r planning-with-files/skills/* ~/.claude/skills/
 ```
 
+### Cursor Installation
+
+Copy the `.cursor/rules/` directory into your project:
+
+```bash
+git clone -b legacy https://github.com/OthmanAdi/planning-with-files.git
+cp -r planning-with-files/.cursor .cursor
+```
+
+Or manually create `.cursor/rules/planning-with-files.mdc` in your project with the content from this repo.
+
 ### Verify Installation
 
 Once installed, the skill will automatically activate when you:
@@ -149,6 +161,9 @@ This skill implements these key context engineering principles:
 planning-with-files/
 ├── .claude-plugin/
 │   └── plugin.json         # Plugin manifest (required for plugin distribution)
+├── .cursor/
+│   └── rules/
+│       └── planning-with-files.mdc  # Cursor rules file
 ├── skills/
 │   └── planning-with-files/
 │       ├── SKILL.md        # Agent Skill definition (what Claude reads)
