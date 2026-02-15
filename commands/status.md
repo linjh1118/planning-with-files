@@ -2,7 +2,7 @@
 description: "Show current planning status at a glance - phases, progress, and any logged errors."
 ---
 
-Read task_plan.md from the current project directory and display a compact status summary.
+Read docs/task_plan.md from the current project directory and display a compact status summary.
 
 ## What to Show
 
@@ -10,7 +10,7 @@ Read task_plan.md from the current project directory and display a compact statu
 2. **Phase Progress**: Count phases and their status (pending/in_progress/complete)
 3. **Phase List**: Show each phase with status icon
 4. **Errors**: Count entries in "## Errors Encountered" table if present
-5. **Files Check**: Confirm which planning files exist
+5. **Files Check**: Confirm which planning files exist under `docs/`
 
 ## Status Icons
 
@@ -32,7 +32,7 @@ Status: {status_icon} {status_text}
   {icon} Phase 3: {name}
   ...
 
-Files: task_plan.md {✓|✗} | findings.md {✓|✗} | progress.md {✓|✗}
+Files: docs/task_plan.md {✓|✗} | docs/findings.md {✓|✗} | docs/progress.md {✓|✗}
 Errors logged: {count}
 ```
 

@@ -1,12 +1,12 @@
 #!/bin/bash
-# Check if all phases in task_plan.md are complete
+# Check if all phases in docs/task_plan.md are complete
 # Always exits 0 — uses stdout for status reporting
 # Used by Stop hook to report task completion status
 
-PLAN_FILE="${1:-task_plan.md}"
+PLAN_FILE="${1:-docs/task_plan.md}"
 
 if [ ! -f "$PLAN_FILE" ]; then
-    echo "[planning-with-files] No task_plan.md found — no active planning session."
+    echo "[planning-with-files] No docs/task_plan.md found — no active planning session."
     exit 0
 fi
 
